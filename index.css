@@ -1,0 +1,66 @@
+:root {
+    --textcolor-grey-100: hsl(0, 0%, 10%);
+    --textcolor-grey-200: hsl(0, 0%, 20%);
+    --textcolor-grey-300: hsl(0, 0%, 30%);
+    --textcolor-grey-400: hsl(0, 0%, 40%);
+    --textcolor-grey-500: hsl(0, 0%, 50%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    /border: 1px solid red;
+    box-sizing: border-box;
+}
+
+body {
+    /background-color: var(--textcolor-grey-500);
+
+}
+
+img {
+    border-radius: 16px;
+    height: 180px;
+    width: 190px;
+}
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    /background-color: var(--textcolor-grey-100);
+    /background-image: linear-gradient(var(--textcolor-grey-100), var(--textcolor-grey-200), var(--textcolor-grey-300));
+    height: fit-content;
+    text-align: center;
+    border: 3px solid rgb(8, 8, 8);
+}
+.card > h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card h2{
+    margin: 5px 0;
+}
+
+.card span{
+    background-color: blue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 6px;
+    padding: 2px;
+}
